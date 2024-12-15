@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Totally Retro Cookbook</title>
+    <link rel="stylesheet" href="cookbook.css">
+</head>
+<body class="cookbook3">
+
+    <header>
+        <h1>Welcome to Janice's Nostalgic Corner!</h1>
+    </header>
+
+    <main class="main-container">
+        <section>
+            <h2>Hello, I'm Janice!</h2>
+            <p>
+                I'm a food-loving, dance-crazy, basketball-watching retro enthusiast! 
+                I created this page to share a little bit about myself and my favorite things.
+                Let's connect over nostalgia and creativity!
+            </p>
+        </section>
+
+        <section>
+            <h3>My Favorites</h3>
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Foods</td>
+                    <td>Steak, Korean BBQ, Chicken, Ugandan dishes</td>
+                </tr>
+                <tr>
+                    <td>Sports</td>
+                    <td>Basketball (Go WNBA Aces!)</td>
+                </tr>
+                <tr>
+                    <td>Hobbies</td>
+                    <td>Dancing, exploring retro games, watching Marvel, DC, and Anime movies</td>
+                </tr>
+                <tr>
+                    <td>Music</td>
+                    <td>Anything upbeat and fun, with a touch of retro classics</td>
+                </tr>
+                <tr>
+                    <td>Games</td>
+                    <td>Retro arcade classics and modern storytelling adventures</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="portfolio">
+            <a href="assets/JANICE AINE.pdf" download="assets/JANICE AINE.pdf">
+                <button>Download Resume</button>
+            </a>
+        </section>
+
+        <section>
+            <h3>Engage with Me!</h3>
+            <div class="engaging-features">
+                <label for="songSelector">Select a song:</label>
+                <select id="songSelector" aria-labelledby="songSelectorLabel">
+                    <option value="assets/Retro1.mp3">🎵 Retro Track 1</option>
+                    <option value="assets/Retro2.mp3">🎶 Retro Track 2</option>
+                    <option value="assets/Retro3.mp3">✨ Retro Track 3</option>
+                    <option value="assets/Retro4.mp3">✨ Retro Track 3</option>
+                </select>
+                
+                <div class="music-controls">
+                    <button id="rewindMusic" title="Rewind">⏪</button>
+                    <button id="playMusic" title="Play/Pause">▶</button>
+                    <button id="forwardMusic" title="Fast Forward">⏩</button>
+                    <button id="stopMusic" title="Stop">⏹</button>
+                </div>
+            
+                <button id="volumeUp">🔊 Volume Up</button>
+                <button id="volumeDown">🔉 Volume Down</button>
+            </div>
+                
+                <div class="quiz">
+                    <p>Can you guess my favorite retro game?</p>
+                    <input type="text" id="quizAnswer" placeholder="Enter your guess">
+                    <button id="submitQuiz">Submit</button>
+                    <p id="quizResult"></p>
+                </div>
+                
+            </div>
+        </section>
+
+        <button id="backButton">Back</button>
+
+        <button id="homeButton">Back to Home</button>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Totally Nostalgic Corner. All rights reserved.</p>
+    </footer>
+
+    <script src="cookbook.js"></script>
+</body>
+</html>

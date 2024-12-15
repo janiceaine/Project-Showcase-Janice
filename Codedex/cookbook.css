@@ -1,0 +1,263 @@
+@font-face {
+    font-family: 'Press Start 2P', cursive;
+    src: url('fonts/PressStart2P-Regular.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: beige;
+    margin: 0;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #008080;
+    font-family: 'Courier New', monospace;
+}
+
+/* Unique backgrounds for each page */
+body.cookbook1 {
+    background-image: url('assets/cut.gif');
+    image-rendering: pixelated;
+}
+
+body.cookbook2 {
+    background-image: url('assets/kitchen.gif');
+    image-rendering: pixelated;
+}
+
+body.cookbook3 {
+    background-image: url('assets/Girl.gif'); /* A nostalgic 90s-themed gif */
+    background-size: cover;
+    image-rendering: pixelated;
+}
+
+.main-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    position: relative;
+    background: white transparent;
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+    color: white;
+    box-shadow: 20px 20px rgba(0,0,0,.15);
+    transition: all .4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #808080;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+}
+
+.main-container:hover {
+  border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+  box-shadow: 10px 10px rgba(0,0,0,.25);
+}
+
+header {
+    text-align: center;
+    color: greenyellow;width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    background: #c0c0c0;
+    padding: 10px;
+    border: 2px solid #808080;
+    box-shadow: inset 2px 2px 0 #ffffff, inset -2px -2px 0 #000000;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: black;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    background: #c0c0c0;
+    padding: 10px;
+    border: 2px solid #808080;
+    box-shadow: inset 2px 2px 0 #ffffff, inset -2px -2px 0 #000000;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    margin: 10px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.links a:hover {
+    background-color: white;
+    color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 5px 0;
+}
+
+/* Navigation button styling */
+.nav-button {
+    position: fixed;
+    bottom: 20px;
+    padding: 10px 20px;
+    background: #e0e0e0;
+    border: 2px solid #808080;
+    font-family: inherit;
+    cursor: pointer;
+    box-shadow: 2px 2px 0 #ffffff, -2px -2px 0 #808080;
+}
+
+.nav-button.back {
+    left: 20px;
+}
+
+.nav-button.next {
+    right: 20px;
+}
+
+.nav-button:hover {
+    background: #c0c0c0;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #808080;
+    padding: 8px;
+    text-align: left;
+}
+
+#portfolio {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#portfolio h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#portfolio p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.music-controls button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #ffcc00;
+    border: 2px solid #808080;
+    border-radius: 5px;
+    color: black;
+    box-shadow: 2px 2px 0 #ffffff, -2px -2px 0 #808080;
+    cursor: pointer;
+    text-align: center;
+}
+
+.music-controls button:hover {
+    background-color: #ffe680;
+    box-shadow: 4px 4px 0 #ffffff, -4px -4px 0 #000000;
+}
+
+.music-controls button:active {
+    transform: scale(0.95); /* Shrinks slightly on click */
+    box-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #808080; /* Adjust shadow */
+}
+
+#songSelector {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid #808080;
+    background-color: #f0f0f0;
+    color: #000;
+    margin: 10px 0;
+    width: 250px;
+    text-align: center;
+    box-shadow: 2px 2px 0 #ffffff, -2px -2px 0 #808080;
+    cursor: pointer;
+}
+
+#songSelector:hover {
+    background-color: #e0e0e0;
+}
+
+button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: 2px solid #808080;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 2px 2px 0 #ffffff, -2px -2px 0 #808080;
+    text-align: center;
+    width: 150px;
+}
+
+button:hover {
+    background-color: #ffe680;
+}
+
+
+.engaging-features {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.engaging-features button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    color: black;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.engaging-features button:hover {
+    background-color: #ffe680;
+}
+
+
+.quiz {
+    margin: 20px 0;
+}
