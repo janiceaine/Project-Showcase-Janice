@@ -2,7 +2,7 @@
 
 Welcome to my retro cookbook! Step back in time to the 90s and explore a nostalgic collection of my favorite recipes. Each page features a vintage Windows 95-inspired look, complete with interactive buttons that guide you through delicious dishes. As you browse the cookbook, you can click on each recipe for a pop-up box with a fun description, all wrapped in a retro-style frame. Plus, if you're interested in my professional journey, the third page offers a peek at my portfolio and a downloadable PDF of my resume. It's a blend of old-school charm and modern-day flavor—so get ready to cook up some memories!
 
-##Languages and Technologies Used:
+**Languages and Technologies Used:**
 
 This website is built using a mix of classic and modern web technologies to create an interactive and nostalgic user experience.
 
